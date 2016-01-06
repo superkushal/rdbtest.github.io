@@ -11,38 +11,36 @@
     </head>
 
 <body>
-
-
   <div id="loading">
     <div id="loading-center">
+    <h1 style="color:white; font-weight:200;">Click to stop the mesemerization :)</h1>
       <div id="loading-center-absolute">
         <div id="object"></div>
       </div>
     </div>
   </div>
-
-    
-
   <div class ="header">
-    <div class="hoja">Hi</div>
+  <img class="img-circle" src="me.jpg">
+  <h1>Hi! My name's Kushal Tirumala</h1>
   </div>
   <div class="aboutme">
-    <h1>My name's Kushal</h1>
-    <h1>danlin is my friend</h1>
-    <p>and I code. I have experience in a bunch of stuff ranging from full-stack web development to making games. More specificially, </p>
+    <h1>What do I do?</h1>
+    <p>I'm a developer and entrepeneur. I have experience in a bunch of stuff ranging from full-stack web development to making games.</p>
   </div>
   <div class="projects">
-    <h1>Here are some of the stuff I've made</h1>
+    <h1>Projects</h1>
     <div class = "row">
       <h1>Quill<h1>
     </div>
-    </div>
+  </div>
   
 
 </body>
 <script type="text/javascript">
   $(window).load(function() {
-   $("#loading").fadeOut(2000);
-  });
+  $("#loading-center").click(function() {
+  $("#loading").fadeOut(500);
+  })    
+});
 </script>
 </html>
