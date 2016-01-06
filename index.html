@@ -7,27 +7,28 @@
         <title>Kushal Tirumala</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
 
 <body>
-<div id="loader-wrapper">
-    <div id="loader"></div>
- 
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
- 
-</div>
-<div id="content">
-    
+
+
+  <div id="loading">
+    <div id="loading-center">
+      <div id="loading-center-absolute">
+        <div id="object"></div>
+      </div>
+    </div>
+  </div>
+
     
 
   <div class ="header">
-      <!--creds to Marco Barria for this awesome animation :)-->
-    <div class="hoja">Hi there!</div>
+    <div class="hoja">Hi</div>
   </div>
   <div class="aboutme">
     <h1>My name's Kushal</h1>
+    <h1>danlin is my friend</h1>
     <p>and I code. I have experience in a bunch of stuff ranging from full-stack web development to making games. More specificially, </p>
   </div>
   <div class="projects">
@@ -35,11 +36,13 @@
     <div class = "row">
       <h1>Quill<h1>
     </div>
-  
-
-  </div>
-  </div>
+    </div>
   
 
 </body>
+<script type="text/javascript">
+  $(window).load(function() {
+   $("#loading").fadeOut(2000);
+  });
+</script>
 </html>
