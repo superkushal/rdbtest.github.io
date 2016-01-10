@@ -103,11 +103,6 @@ top: 0px;
 
 /**media query stuff = no animations*/
 @media screen and (max-width: 480px) {
-    #loading {
-      visibility: hidden;
-    }
-    #object {
-      visibility: hidden;
-    }
+
 
 }
