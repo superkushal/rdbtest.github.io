@@ -24,27 +24,22 @@ body {
     margin: 10px;
 }
 .aboutme {
-  /**rip color scheme*/
-  /**jk http://flatuicolors.com/ */
-  background-color:#2abb67;
+ 
+  /**http://flatuicolors.com/ */
+  background-color:#ecf0f1;
   height: 100%;
   width: 100%;
   padding:0;
   margin:0;
+  color:black;
 }
 
-.aboutme h1 {
-  color:#fff;
+.aboutme p {
   margin:0;
   padding-top:50px;
-  font-size: 60px;
-}
-.aboutme p {
-  color:white;
   font-size:20px;
   font-family: monospace;
   font-weight: lighter;
-  margin:20px;
 }
 
 .projects {
@@ -60,6 +55,9 @@ body {
   margin:0;
   font-weight: 500;
 }
+
+
+/**secondary animagtion*/
 /**css animation css*/
 #loading{
 background-color: #bd4932;
@@ -75,26 +73,11 @@ top: 0px;
   width: 100%;
   height: 100%;
   position: relative;
+  padding-top:25%;
+  padding-left: 48%;
 }
-#loading-center-absolute {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 200px;
-  width: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-}
-#object{
-  width: 80px;
-  height: 80px;
-  background-color: #FFF;
-  -webkit-animation: animate 1s infinite ease-in-out;
-  animation: animate 1s infinite ease-in-out;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 60px;
-}
+
+
 @-webkit-keyframes animate {
   0% { -webkit-transform: perspective(160px); }
   50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
@@ -113,6 +96,11 @@ top: 0px;
     -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
   }
 }
+.pacman > div {
+
+}
+
+
 /**media query stuff = no animations*/
 @media screen and (max-width: 480px) {
     #loading {
