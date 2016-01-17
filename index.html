@@ -13,19 +13,6 @@
     </head>
 
 <body>
-<!-- <div class="main">
-  <div class="loadercontainer">
-  <div class="loader">
-        <div class="loader-inner pacman">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-  </div>
-  </div>
-  </div> -->
   <div id="loading">
     <div id="loading-center">
         <div class="loader-inner pacman">
@@ -34,10 +21,10 @@
           <div></div>
           <div></div>
           <div></div>
+          <div></div>
         </div>
     </div>
   </div>
-
 
   <div class ="header">
   <img class="img-circle" src="me.jpg">
@@ -56,10 +43,9 @@
 
 </body>
 <script type="text/javascript">
-   $(window).load(function() {
-  $("#loading-center").click(function() {
-  $("#loading").fadeOut(500);
-  })    
-});
+  var timeoutID = window.setTimeout(function(){
+        $("#loading").fadeOut(500);
+      },1000);
+
 </script>
 </html>
