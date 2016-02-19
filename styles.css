@@ -52,8 +52,43 @@ body {
 }
 
 .projects {
-  
+  margin:0;
+  padding:0;
+  background-color: white;
+  color:#16a085;
+  height:100%;
 }
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  color:#16a085;
+}
+
+.projects h1 {
+  padding-top: 30px;
+  font-weight: 100;
+  margin:0;
+}
+
+.projects .item {
+  display:inline-block;
+  padding:30px;
+}
+
+.projects .item img {
+  border-radius: 30px;
+}
+
+.team .item h2 a {
+  text-align: center;
+  color:#16a085;
+  text-decoration:none;
+}
+
+
+
 
 
 /**secondary animagtion*/
@@ -115,5 +150,11 @@ top: 0px;
 
 /**media query stuff = no animations*/
 @media screen and (max-width: 480px) {
+  .projects {
+    padding-top:80px;
+  }
 
+  .aboutmecontainer p {
+    padding-top: 0px;
+  }
 }
