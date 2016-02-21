@@ -26,8 +26,6 @@
     </div>
   </div>
 
-
-
   <div class ="header" id="animate-area">
     <h1>hi! my name's Kushal</h1>
   <img class="img-circle" src="me.jpg">
@@ -84,17 +82,55 @@
     </div>
   </div>
 
-  <div class="skills">
+  <div onclick="changeColor()" class="skills" id ="skills">
   <h1>skillset</h1>
   <hr width="35%">
-  <p>i code lmfao!!!</p>
+    <div class="content">
+      <p>languages: HTML5, CSS, JavaScript, Java (+Scala), C++, Python, C#, PHP </p>
+      <p>databases: SQlite, MongoDB
+      <p>frameworks: front end frameworks (bootstrap, react, etc.), AngularJS, Node.js, Ionic, Meteor, Express</p>
+      <p>other stuff: Unity3D, Autodesk Inventor, Autodesk Maya</p>
+      <p>currently learning: RoR</p>
+    </div>
+    <img src="projects/mean.jpg" width="374.4px" height="150px">
+    <img src="projects/lamp.png" width="250.5px" height="150px">
   </div>
+
+  <div class="links">
+  <h1>links</h1>
+  <hr width="35%">
+  <div class="link">
+    <a href="https://github.com/kushaltirumala"><img style="border-radius:0%"src="projects/github.png"></a>
+  </div>
+  <div class="link">
+    <a href="https://www.linkedin.com/in/kushaltirumala"><img src="projects/linkedin.png"></a>
+  </div>
+  <div class="link">
+    <a href="http://devpost.com/KushalTirumala"><img src="projects/devpost.jpg"></a>
+  </div>
+  <div class="link">
+    <a href="mailto:superkushal93@gmail.com"><img src="projects/mail.png"></a>
+  </div>
+  </div>
+
+<div class ="header" id="animate-area" style="height:150px">
+    
+</div>
 
 </body>
 <script type="text/javascript">
   var timeoutID = window.setTimeout(function(){
         $("#loading").fadeOut(500);
       },1000);
+  function changeColor() {
+  var colors = ["#1abc9c","#2ecc71", "#3498db", "#9b59b6", "#34495e", "#16a085", "#27ae60", "#2980b9", "#e74c3c", "#c0392b" ];
+  var newcolor = colors[Math.floor(Math.random()*colors.length)];
+  //console.log("NEWCOLOR" + newcolor);
+  document.getElementById("skills").style.backgroundColor = newcolor;
+  document.getElementById("skills").style.color = "white";
+}
+
 
 </script>
+
 </html>

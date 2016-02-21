@@ -87,22 +87,44 @@ hr {
   text-decoration:none;
 }
 
+/**skillz*/
+
+
 .skills {
   margin:0;
   padding:0;
   background-color: white;
-  color:#26A65B;
-  height:100%;
+  color:#34495e;
+  height:80%;
 }
 
 .skills h1 {
   padding-top: 30px;
+
   font-weight: 100;
   margin: 0;
 }
+.skills .content {
+  padding-top: 30px;
+}
 
 
-
+.links {
+  margin:0;
+  padding:0;
+  background-color: white;
+  color:#34495e;
+  margin-bottom: 50px;
+}
+.links .link {
+  padding: 30px;
+  display: inline-block;
+}
+.links .link img {
+  border-radius: 50%;
+  height:200px;
+  width:200px;
+}
 
 /**secondary animagtion*/
 /**css animation css*/
@@ -162,7 +184,7 @@ top: 0px;
 }
 
 /**media query stuff = no animations*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .projects {
     padding-top:80px;
   }
@@ -172,6 +194,27 @@ top: 0px;
   }
 
   .skills {
-    padding-top:450%;
+    padding-top:430%;
   }
+  .skills p {
+    padding-left: 30px;
+    padding-right:30px;
+  }
+  .links {
+    padding-top: 150px;
+  }
+
+@media screen and (max-width: 600px) {
+  .skills {
+    padding-top: 100%;
+  }
+
+  @media screen and (max-width: 480px) {
+  .skills {
+    padding-top: 430%;
+  }
+}
+
+
+
 }
