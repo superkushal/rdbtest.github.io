@@ -211,7 +211,10 @@ top: 0px;
 
   @media screen and (max-width: 480px) {
   .skills {
-    padding-top: 450%;
+    padding-top: 470%;
+  }
+  .links {
+    padding-top:200px;
   }
 }
 
